@@ -21,3 +21,5 @@ pipeline {
               mail bcc: '', body: 'Hi team, welcome to jenkins job alerts......', cc: '', from: '', replyTo: '', subject: 'Jenkins job', to: 'agyr12345678@gmail.com'
             }  
         }
+    }
+}
