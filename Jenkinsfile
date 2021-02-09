@@ -3,17 +3,17 @@ pipeline {
     stages {
         stage('---clean---') {
             steps {
-                sh "maven/apache-maven-3.6.3/bin/mvn clean"
+                sh "/apache-maven-3.6.3/bin/mvn clean"
             }
         }
         stage('--test--') {
             steps {
-                sh "maven/apache-maven-3.6.3/bin/mvn test"
+                sh "/apache-maven-3.6.3/bin/mvn test"
             }
         }
         stage('--package--') {
             steps {
-                sh "maven/apache-maven-3.6.3/bin/mvn package"
+                sh "/apache-maven-3.6.3/bin/mvn package"
             }
         }
         stage('Email Notification') {
