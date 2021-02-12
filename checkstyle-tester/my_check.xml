@@ -28,6 +28,9 @@
          <!-- <module name="NestedSwitchCheck"/> -->
 
          <!-- usuppress javadoc parsing errors, as we test Check not a parser -->
+        <module name="FinalLocalVariable">
+    <property name="severity" value="ignore"/>
+</module>
          <module name="SuppressionXpathSingleFilter">
             <property name="message" value="Javadoc comment at column \d+ has parse error"/>
          </module>
